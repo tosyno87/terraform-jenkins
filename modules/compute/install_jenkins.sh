@@ -3,5 +3,6 @@ wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key 
 sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
 sudo apt update && sudo apt upgrade -y
 sudo apt install default-jre -y
+sudo apt install default-jre zip python python3-pip python3.8-venv -y
 sudo apt install jenkins -y
 sudo systemctl start jenkins
